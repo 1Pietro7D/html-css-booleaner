@@ -7,3 +7,21 @@
 body {
   background-color: #4ea0ff;
 }
+#container {
+  background-color: white;
+  position: relative;
+  width: 70%;
+  height: 100vh;
+  margin-left: calc((100% - 70%) / 2);
+}
+header {
+  background-image: url("img/pattern.png");
+  background-size: contain;
+  height: 70px;
+  margin-top: 10%;
+}
+#logo {
+  position: relative;
+  height: 40px;
+  top: 40%;
+}
