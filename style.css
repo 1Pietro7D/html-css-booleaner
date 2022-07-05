@@ -35,13 +35,19 @@ address {
   font-size: small;
   color: grey;
   margin: 20px 0px;
+  font-size: 20px;
+}
+time {
+  font-size: 15px;
 }
 #Tim {
-  width: 70vw; /*differenza di 11.91 px, perchè? a ogni vw corrispondono 12,14px di differenza, dove ci stiamo perdendo quel valore inferiore all'1%? c'è forse un bordo attorno l'immagine che conta per un'altra immagine? */
+  /*differenza di 11.91 px, perchè? a ogni vw corrispondono 12,14px di differenza, dove ci stiamo perdendo quel valore inferiore all'1%? c'è forse un bordo attorno l'immagine che conta per un'altra immagine? */
   margin-left: calc((-100% + 70% - 15% + 2.25%) / 2);
   /* 2.25% è il 15% del 15% XD almeno il margine è corretto*/
   height: 400px;
+  margin-right: calc((-100% + 70% - 15% + 2.25%) / 2); /* test */
 }
+
 figure > img {
   height: 300px;
 }
