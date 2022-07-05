@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  border: 0;
 }
 /*  */
 body,
@@ -36,11 +37,33 @@ address {
   margin: 20px 0px;
 }
 #Tim {
-  height: 300px;
-  width: 70vw;
+  width: 70vw; /*differenza di 11.91 px, perchè? a ogni vw corrispondono 12,14px di differenza, dove ci stiamo perdendo quel valore inferiore all'1%? c'è forse un bordo attorno l'immagine che conta per un'altra immagine? */
   margin-left: calc((-100% + 70% - 15% + 2.25%) / 2);
-  /* 2.25% è il 15% del 15% XD */
+  /* 2.25% è il 15% del 15% XD almeno il margine è corretto*/
+  height: 400px;
 }
 figure > img {
   height: 300px;
+}
+#one {
+  float: left;
+}
+#two {
+  float: right;
+  position: relative;
+}
+section,
+article {
+  margin: 10% 0%; /*repeat*/
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+th {
+  text-align: left;
+  background-color: #4ea0ff;
+}
+tbody > tr:nth-of-type(2n + 1) {
+  background-color: aquamarine;
 }
