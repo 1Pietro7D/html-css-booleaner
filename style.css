@@ -33,4 +33,14 @@ header {
 address {
   font-size: small;
   color: grey;
+  margin: 20px 0px;
+}
+#Tim {
+  height: 300px;
+  width: 70vw;
+  margin-left: calc((-100% + 70% - 15% + 2.25%) / 2);
+  /* 2.25% è il 15% del 15% XD */
+}
+figure > img {
+  height: 300px;
 }
